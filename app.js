@@ -5,12 +5,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
 
-// ****************************************************************
-
-var indexRouter = require('./routes/index');
-
-// ****************************************************************
-
 var app = express();
 
 // view engine setup
@@ -24,6 +18,17 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 
+// ****************************************************************
+// REQUIRE OF ROUTES
+// ****************************************************************
+
+var indexRouter = require('./routes/api/index');
+
+// ****************************************************************
+
+
+// ****************************************************************
+// USE OF ROUTES
 // ****************************************************************
 
 app.use('/api', indexRouter);
