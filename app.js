@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 
 // ****************************************************************
-// REQUIRE OF ROUTES
+// IDEA REQUIRE OF ROUTES
 // ****************************************************************
 
 var indexRouter = require('./routes/api/index');
@@ -28,7 +28,7 @@ var indexRouter = require('./routes/api/index');
 
 
 // ****************************************************************
-// USE OF ROUTES
+// IDEA USE OF ROUTES
 // ****************************************************************
 
 app.use('/api', indexRouter);
