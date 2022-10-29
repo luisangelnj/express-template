@@ -23,6 +23,7 @@ app.use(cors());
 // ****************************************************************
 
 var indexRouter = require('./routes/api/index');
+var usersRouter = require('./routes/api/users');
 
 // ****************************************************************
 
@@ -32,7 +33,7 @@ var indexRouter = require('./routes/api/index');
 // ****************************************************************
 
 app.use('/api', indexRouter);
-// app.use('/api', indexRouter);
+app.use('/api/users', usersRouter);
 
 // ****************************************************************
 
