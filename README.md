@@ -4,9 +4,9 @@ The quickest way to get started with express. Generate an application as shown b
 
 ## Installation
 
-#### Clone repo
+#### Download project
 ```
-git clone https://github.com/luisangelnj/express-template.git
+Download the project to start using it.
 ```
 
 #### Install dependecies
